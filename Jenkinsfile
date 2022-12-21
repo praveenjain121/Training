@@ -7,6 +7,10 @@ pipeline {
     }*/
 
     stages {
+        stage('Hello') {
+            steps {
+              echo "Hello World"
+            }
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
