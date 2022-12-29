@@ -5,7 +5,7 @@ pipeline {
            // agent { docker 'maven:3.8.6-eclipse-temurin-11' } 
             steps {
                 echo 'Hello, Maven'
-                java -version
+                echo java -version
                // mvn --version
             }
         }
@@ -13,7 +13,7 @@ pipeline {
            // agent { docker 'openjdk:8-jre' } 
             steps {
                 echo 'Hello, JDK'
-                java -version
+                echo java -version
             }
         }
     }
