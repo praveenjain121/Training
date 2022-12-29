@@ -1,15 +1,15 @@
 pipeline {
     agent none 
     stages {
-        stage('Example Build') {
+        stage('Build') {
            // agent { docker 'maven:3.8.6-eclipse-temurin-11' } 
             steps {
                 echo 'Hello, Maven'
-                echo java -version
+               // echo java -version
                // mvn --version
             }
         }
-        stage('Example Test') {
+        stage('Test') {
            // agent { docker 'openjdk:8-jre' } 
             steps {
                 echo 'Hello, JDK'
